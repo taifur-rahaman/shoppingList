@@ -23,10 +23,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Project Template</title>
+    <title>Shopping List</title>
   </head>
   <body>
-    <h1>Project Template</h1>
+    <div class="container">
+      <div class="header">
+        <i class="fa-solid fa-list"></i>
+        <h1>shopping list</h1>
+      </div>
+      <form class="entryForm" id="entryForm">
+        <input type="text" name="items" id="items" placeholder="enter item" />
+        <button type="submit" id="addBtn" class="addBtn btn">
+          <i class="fas fa-plus"></i>add item
+        </button>
+      </form>
+      <div class="filter">
+        <input
+          type="text"
+          name="filter"
+          id="filterInput"
+          placeholder="filter items"
+        />
+      </div>
+      <div class="items">
+        <ul id="itemList">
+          <li class="item">apple <i class="fa fa-close"></i></li>
+          <li class="item">orange <i class="fa fa-close"></i></li>
+          <li class="item">onion <i class="fa fa-close"></i></li>
+          <li class="item">milk <i class="fa fa-close"></i></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button id="clearBtn" class="clearBtn btn">clear all</button>
+      </div>
+    </div>
     <!-- javaScript -->
     <script src="./app.js"></script>
   </body>
